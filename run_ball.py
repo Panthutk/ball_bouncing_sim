@@ -4,8 +4,6 @@ from ball_oop import Ball
 
 balls = Ball()
 
-balls = Ball()
-
 turtle.speed(0)
 turtle.tracer(0)
 turtle.hideturtle()
@@ -19,7 +17,7 @@ num_balls = 5
 
 # Initialize balls with random positions
 balls.initializing(canvas_width, canvas_height, ball_radius, num_balls)
-
+turtle.done()
 while True:
     turtle.clear()
     for i in range(num_balls):
@@ -29,4 +27,3 @@ while True:
     turtle.update()
 
 # Hold the window; close it by clicking the window close 'x' mark
-turtle.done()
