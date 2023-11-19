@@ -17,7 +17,7 @@ num_balls = 5
 
 # Initialize balls with random positions
 balls.initializing(canvas_width, canvas_height, ball_radius, num_balls)
-turtle.done()
+
 while True:
     for i in range(num_balls):
         balls.draw_circle(
@@ -27,3 +27,4 @@ while True:
     turtle.clear()
 
 # Hold the window; close it by clicking the window close 'x' mark
+turtle.done()
