@@ -4,8 +4,6 @@ from ball_oop import Ball
 
 balls = Ball()
 
-balls = Ball()
-
 turtle.speed(0)
 turtle.tracer(0)
 turtle.hideturtle()
@@ -21,12 +19,12 @@ num_balls = 5
 balls.initializing(canvas_width, canvas_height, ball_radius, num_balls)
 
 while True:
-    turtle.clear()
     for i in range(num_balls):
         balls.draw_circle(
             balls.ball_color[i], ball_radius, balls.xpos[i], balls.ypos[i])
         balls.move_circle(i, canvas_width, canvas_height, ball_radius)
     turtle.update()
+    turtle.clear()
 
 # Hold the window; close it by clicking the window close 'x' mark
 turtle.done()
